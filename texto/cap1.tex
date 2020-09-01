@@ -1,0 +1,55 @@
+% Nome do capítulo
+\chapter{Introdução}
+% Label para referenciar
+\label{cap1}
+
+% Diminuir espaçamento entre título e texto
+\vspace{-1.9cm}
+
+% Texto do capítulo
+
+    Uma aplicação móvel é um software projetado para ser executado em \textit{smartphones, tablets} ou outros dispositivos móveis e podem ser classificados em três categorias, sendo nativos, híbridos ou nativos multiplataformas. Conforme estudo realizado pela empresa de consultoria App Annie, o uso destas aplicações para realizar tarefas diárias cresce cada vez mais, principalmente no Brasil, que se encontra em terceiro lugar no \textit{ranking} mundial \cite{AppAnnie2020}.
+
+    O desenvolvimento de aplicações nativas consiste na construção de aplicações dedicadas e projetadas somente a um sistema operacional,  pelo fato de cada plataforma possuir compatibilidade nativa com determinadas linguagens de programação, por exemplo o \textit{Swift} para iOS e o \textit{Kotlin} para Android. Todas as funcionalidades da plataforma estão disponíveis sem restrições e existem padrões de interface gráfica e experiência de usuário específicos, que ajudam o usuário a entender como aquele aplicativo funciona, já que todos os outros aplicativos daquela plataforma seguem os mesmos padrões \cite{Corral2012}.
+    
+    Além das aplicações nativas, existem também as \textit{Web Apps(PWAs)} que são aplicações web híbridas podendo ser executadas no \textit{browser} de cada dispositivo. O desenvolvimento destas aplicações é baseado em linguagens como HTML, CSS e \textit{Javascript} para o \textit{client-side} e para o \textit{server-side} pode-se utilizar \textit{Ruby}, \textit{Java}, PHP entre outras. Com as \textit{Web Apps} é possível desenvolver uma mesma aplicação a ser executada em dispositivos de diferentes plataformas, porém não é possível ter acesso total às funcionalidades de cada plataforma, como no desenvolvimento nativo, e também não existem padrões de interface ou de experiência de usuário que sirva para várias plataformas ao mesmo tempo, podendo causar uma sensação ruim na usabilidade e experiência de uso da aplicação \cite{Corral2012}.
+
+    A abordagem nativa multiplataformas no desenvolvimento \textit{mobile} diz respeito à criação de uma aplicação através de um único processo de desenvolvimento, onde o resultado final é um aplicativo instalável e executável em diferentes sistemas operacionais, como iOS e Android. Segundo \protect\cite{SantosMontan2012}, nos últimos anos, o esforço gasto para o desenvolvimento nativo proporcionou o surgimento de alternativas comerciais, como os \textit{frameworks} para desenvolvimento multiplataforma \textit{(Cross Platform)} como \textit{Flutter}, \textit{React Native} e \textit{Xamarin}, ganharam espaço no mercado tecnológico por esta abordagem híbrida, pelo fato de acelerar o processo de desenvolvimento, permitindo a criação de aplicativos para diferentes plataformas a partir de um mesmo código, o que impacta diretamente no custo de um projeto, dado que menos recursos técnicos serão necessários para a sua conclusão \cite{Barguil2019}. O \textit{React Native}, criado em 2015 pelo Facebook, é um \textit{framework} referência no desenvolvimento nativo multiplataformas, proporcionando ferramentas e padrões para um desenvolvimento ágil e de qualidade, garantindo um desempenho, performance e usabilidade similar ao de aplicações exclusivamente nativas entre outros recursos que são explicitados ao longo desta dissertação. Antes do seu surgimento o desenvolvimento nativo era algo mais complexo, pois era necessário ter o conhecimento de linguagens específicas como \textit{Swift} para o desenvolvimento de aplicações em iOS e \textit{Java}, \textit{Kotlin} e C++ para Android, impossibilitando qualquer reaproveitamento de código e requisitando equipes de trabalho com o conhecimento em várias tecnologias \cite{Charland2011}.
+  
+    Com o grande avanço da tecnologia móvel, a informatização de processos manuais utilizando as tecnologias citadas anteriormente vem se tornando cada vez mais presente e necessário no contexto de determinadas organizações que visam adquirir maior agilidade e praticidade na execução, disponibilidade e integridade das informações pertinentes durante seus processos, de maneira interativa que garanta uma experiência fluída ao usuário. Trazendo um exemplo real, no laboratório de áudio visual e fotografia da PUC Minas unidade São Gabriel existe uma dificuldade, como também ineficiência e falta de agilidade para realizar a gestão e controle de empréstimos dos equipamentos. Atualmente, os alunos da universidade entram em contato com monitores e técnicos do laboratório para verificar a disponibilidade de um determinado equipamento e, caso o equipamento esteja disponível, o aluno preenche um formulário disponibilizado pelo próprio laboratório para manter o controle dos recursos. Após o preenchimento deste formulário, o monitor ou técnico preenche uma planilha com dados do equipamento para atualizar sobre a situação de empréstimo do mesmo. Em seguida, a liberação é feita por este responsável que conduziu o processo. Em muitos casos a consulta sobre a disponibilidade de determinado recurso é lenta devido à presença de algum dado inconsistente na planilha de controle dos equipamentos, além do que algumas destas informações se perdem durante o processo, sendo que não há uma base de dados centralizada para armazenar todas as informações que auxiliam na gestão e no controle dos recursos do laboratório.
+    
+    Dado o contexto, este trabalho de conclusão de curso tem como principal objetivo desenvolver uma aplicação \textit{mobile} utilizando \textit{React Native}, com funcionalidades que auxiliem na agilidade e praticidade dos empréstimos do laboratório e com regras de negócios que garantam a disponibilidade, integridade e persistência dos dados. Desta maneira, a aplicação a ser desenvolvida poderá ser utilizada por monitores e técnicos do laboratório, alunos e professores da PUC Minas.
+
+
+\section{Objetivos}
+\label{secao1}
+
+    Esta seção apresenta os objetivos gerais e específicos definidos para este trabalho.
+
+\subsection{Objetivo Geral}
+  
+    Este trabalho tem por objetivo desenvolver uma aplicação \textit{mobile} multiplataformas que irá suportar de maneira informatizada o processo de empréstimos de equipamentos dos laboratórios de audiovisual e fotografia da PUC Minas visando centralizar os dados e informações importantes ao processo de maneira simplificada e objetiva, assegurando uma experiência fluída aos usuários.
+    
+\subsection{Objetivos Específicos}
+  
+  Os objetivos específicos deste trabalho são:
+
+    \begin{compactitem}
+      \item[a)] Elicitar todos os requisitos arquiteturais e prototipar a aplicação;
+      \item[b)] Desenvolver uma aplicação \textit{mobile} em \textit{React Native}, para iOS e Android, com funcionalidades que auxiliem a agilidade e praticidade dos empréstimos;
+      \item[c)] Definir regras de negócio e estratégias de persistência a dados para garantir a disponibilidade, confiabilidade e integridade das informações do fluxo de empréstimo;
+      \item[d)] Disponibilizar o aplicativo a monitores, técnicos, alunos e professores da Universidade;
+      \item[e)] Facilitar a consulta sobre a disponibilidade dos equipamentos do laboratório.
+    \end{compactitem}
+
+\section{Justificativa}
+
+    O crescimento do mercado \textit{mobile} deixou de ser uma tendência e passou a ser uma realidade em todos os lugares do mundo, com isso as empresas podem explorar este potencial tecnológico para se diferenciarem de seus concorrentes, otimizando e/ou automatizando processos internos ou externos, aprimorando a gestão organizacional e também agregando valor ao seu negócio. Estes são alguns pontos que o desenvolvimento deste trabalho atingirá diretamente no contexto organizacional em que poderá ser aplicado, como também no cotidiano dos colaboradores e alunos que participam do processo de empréstimo dos equipamentos do laboratório de audiovisual e fotografia da PUC Minas; dado que as tecnologias \textit{mobile} viabilizam uma interação rica e intuitiva, principalmente com telas \textit{touch screen}, onde abre novas maneiras para usuários e desenvolvedores permitindo experiências totalmente novas onde não seria possível sem a tecnologia \textit{mobile} \cite{SousaMonteiro2015}.
+    
+    Além das vantagens citadas no paragráfo anterior, o desenvolvimento deste trabalho pode gerar os seguintes benefícios:
+    
+     - Agilidade no processo de empréstimo de equipamentos;
+     
+     - Auxiliar no controle dos equipamentos, visando a disponibilidade, prazos de devolução, datas de empréstimo e responsáveis pelos empréstimos;
+     
+     - Informações centralizadas para facilitar a gestão dos empréstimos aos alunos.
